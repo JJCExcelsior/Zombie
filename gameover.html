@@ -33,7 +33,12 @@
     <div class="title">Game Over</div>
     <a href="index.html" class="button">Restart Game</a>
      
-    
+    <audio src="./sounds/gameover.mp3" id="over" loop="loop"></audio>
+    <script>
+      window.onload= function(){
+        document.getElementById("over").play()
+      }
+        </script> 
   
 </body>
 </html>

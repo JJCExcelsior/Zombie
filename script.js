@@ -67,9 +67,7 @@ function drawZombies(){
    
     zombiess[i].x-=zombieSpeed
 
-    
-
-    if (zombiess[i].x == 20) {
+      if (zombiess[i].x == 20) {
       score += 10
       zombiess.push({
             x: zombiesX,
@@ -95,16 +93,19 @@ function collision (){
   }
 }
 
+function audio (){
+  let intro = new Audio('./sounds/game.mp3')
+  intro.play()
+}
 
 function startGame (){
+    audio()
     ctx.drawImage(bg, 0, 0)
     ctx.drawImage(knight, knightX, knightY)
     ctx.drawImage(ground, 0, canvas.height-120)
     knightCanvasCollision()
     drawZombies()
     collision()
-    
-    
 }
 
 intervalId = setInterval(()=>{
