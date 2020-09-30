@@ -33,6 +33,10 @@ let zombiess = [
 
 let score = 0
 
+window.onload= function(){
+  document.getElementById("play").play()
+}
+
 document.onkeydown = (event) => {
     console.log(event.keyCode);
     if (event.keyCode == 39 || event.key == "ArrowRight") {
@@ -67,15 +71,25 @@ function drawZombies(){
    
     zombiess[i].x-=zombieSpeed
 
-      if (zombiess[i].x == 20) {
+    if (zombiess)
+
+    if (zombiess[i].x == 20) {
       score += 10
       zombiess.push({
             x: zombiesX,
             y: zombiesY,
         })
     }
-    }
+  }
 }
+
+function drawScore() {
+    ctx.font = "bold 16px Arial";
+    ctx.fillStyle = "#f9f9f9";
+    ctx.fillText("Score: "+score, 10, 20);
+}
+
+ 
 
 function collision (){
   for (let i=0; i< zombiess.length; i++){
@@ -99,13 +113,14 @@ function audio (){
 }
 
 function startGame (){
-    audio()
+    // audio()
     ctx.drawImage(bg, 0, 0)
     ctx.drawImage(knight, knightX, knightY)
     ctx.drawImage(ground, 0, canvas.height-120)
     knightCanvasCollision()
     drawZombies()
     collision()
+    drawScore()
 }
 
 intervalId = setInterval(()=>{
