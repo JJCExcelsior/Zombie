@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZOMBIE KINGDOM</title>
     <style>
-        .button {
+        .start {
           background-color:#b68d08;
           border: '1px';
           color: white ;
@@ -28,16 +28,16 @@
       </style>
 </head>
 
-<body style = "background-image: url('images/gameover.png'); background-repeat:no-repeat;background-position: 50% -10%">
+<body style = "background-image: url('images/splash.png'); background-repeat:no-repeat;background-position: 50% -10%">
    
-    <div class="gameover">ZOMBIE KINGDOM</div>
-    <a href="intro.html" class="button">Play Again!</a>
+    <div class="title">ZOMBIE KINGDOM</div>
+    <a href="game.html" class="start">Start Game</a>
 
-    <audio src="./sounds/gameover.mp3" id="over" loop="loop"></audio>
+    <audio src="./sounds/splash.mp3" id="intro" loop="loop"></audio>
     <!-- <iframe src="game.html" frameborder="0" scrolling="no" width = "920" height="900"></iframe> -->
   <script>
 window.onload= function(){
-  document.getElementById("over").play()
+  document.getElementById("intro").play()
 }
   </script> 
      
