@@ -9,3 +9,65 @@
     padding: 0 auto;
     margin: 0 auto;
 }
+
+canvas {
+    display: none;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.button {
+    background-color:#b68d08;
+    border: '1px';
+    color: white ;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 400px 430px;
+    cursor: pointer;
+  
+  }
+  .title {
+      position: absolute;
+      top: 150px;
+      left: 40%;
+      font-size: 40px;
+      color: white
+  }
+
+  .splash{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .button{
+      position: relative;
+      text-align:  center;
+      color: white;
+  }
+
+  .splash-container {
+    background-image: url("images/splash.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .win-container {
+    background-image: url("images/win.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gameover-container {
+    background-image: url("images/gameover.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
