@@ -46,7 +46,7 @@ Definition of the different states and their transition (transition functions)
 
 ### Git
 URls for the project repo and deploy
-[Link Repo]( https://github.com/JJCExcelsior/Zombie-Village.git)
+[Link Repo]( https://github.com/JJCExcelsior/Zombie.git)
 [Link Deploy]( )
 
 
